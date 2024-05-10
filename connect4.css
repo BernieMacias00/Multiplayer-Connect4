@@ -1,0 +1,52 @@
+/*
+Bernie Macias
+Multiplayer project
+3/20/24
+*/
+/* styles.css */
+
+
+
+body { /* Centers text  and chooses font */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+}
+
+
+#board {
+    /* sets the dimensions of game board */
+    height: 540px;
+    width: 630px;
+    /* sets background color */
+    background-color: rgb(0, 0, 0);
+    /* centers the game board*/
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    /* sets gap between grid items */
+    grid-gap: 5px; 
+}
+
+.tile {
+    /* dimensions of each tile */
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    /* white background color */
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* color and style of game piece */
+.red-piece {
+    /* sets color of pieces to gray */
+    background-color: rgb(126, 126, 126);  
+}
+
+/* Styling for yellow game pieces */
+.yellow-piece {
+    /* sets color of pieces to maroon */
+    background-color: maroon;
+}
